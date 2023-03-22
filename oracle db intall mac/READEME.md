@@ -1,16 +1,16 @@
 ## Colima 설치
 
-'''bash
+```bash
 $ brew install colima
-'''
+```
 
 [homebrew가 없다면](https://github.com/abiosoft/colima)
 
 ## Docker 설치
 
-'''bash
+```bash
 $ brew install --cask docker
-'''
+```
 
 [docker 설치 경로](https://www.docker.com/products/docker-desktop/)
 
@@ -20,32 +20,32 @@ docker설치 후 로그인 진행
 
 Colima and Docker를 설치했다면 실행
 
-'''bash
+```bash
 $ colima start --memory 4 --arch x86_64
-'''
+```
 
-'docker ps'명령어가 제대로 작동하면 정상적으로 설치가 된 것이다
+`docker ps`명령어가 제대로 작동하면 정상적으로 설치가 된 것이다
 
 ## Oracle Database 11gR2 XE 설치
 
-'''bash
+```bash
 docker search oracle-xe-11g
-'''
+```
 다운 받을 수 있는 docker images 확인
 
-'''bash
+```bash
 docker pull jaspeen/oracle-xe-11g
-'''
+```
 설치할 이미지
 
-'''bash
+```bash
 docker run --name oracle -d -p 1521:1521 jaspeen/oracle-xe-11g
-'''
+```
 컨테이너 옵션 설정
 
-'''bash
+```bash
 docker exec -it oracle sqlplus
-'''
+```
 sqlplus실행
 
 user-name은 "system"
@@ -70,9 +70,9 @@ Name은 필수 입력
 Username은 "system"입력
 Password은 "oracle"입력
 
-'''
+```
 Name : 이 접속을 뜻하는 이름
 UserName : 설정한 계정명
 Password : 계정의 비밀 번호
 Connection Type : 연결 타입
-'''
+```
