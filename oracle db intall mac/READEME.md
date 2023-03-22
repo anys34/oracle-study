@@ -12,8 +12,7 @@ $ brew install colima
 $ brew install --cask docker
 ```
 
-[docker 설치 경로](https://www.docker.com/products/docker-desktop/)
-<br/>
+[docker 설치 경로](https://www.docker.com/products/docker-desktop/)  
 
 docker설치 후 로그인 진행
 
@@ -23,8 +22,7 @@ Colima and Docker를 설치했다면 실행
 
 ```bash
 $ colima start --memory 4 --arch x86_64
-```
-<br/>
+```  
 
 `docker ps`명령어가 제대로 작동하면 정상적으로 설치가 된 것이다
 
@@ -33,20 +31,17 @@ $ colima start --memory 4 --arch x86_64
 ```bash
 docker search oracle-xe-11g
 ```
-다운 받을 수 있는 docker images 확인
-<br/>
+다운 받을 수 있는 docker images 확인  
 
 ```bash
 docker pull jaspeen/oracle-xe-11g
 ```
-설치할 이미지
-<br/>
+설치할 이미지  
 
 ```bash
 docker run --name oracle -d -p 1521:1521 jaspeen/oracle-xe-11g
 ```
-컨테이너 옵션 설정
-<br/>
+컨테이너 옵션 설정  
 
 ```bash
 docker exec -it oracle sqlplus
@@ -72,8 +67,7 @@ Intel은 "Mac OSX with JDK 11 included"를 다운로드
 SQL Developer를 들어가서 수동으로 접속 생성 클릭
 Name은 필수 입력 
 Username은 "system"입력
-Password은 "oracle"입력
-<br/>
+Password은 "oracle"입력  
 
 ```
 Name : 이 접속을 뜻하는 이름
