@@ -13,6 +13,7 @@ $ brew install --cask docker
 ```
 
 [docker 설치 경로](https://www.docker.com/products/docker-desktop/)  
+들어가서 자신과 맞는 os 파일을 설치해야 한다
 
 docker설치 후 로그인 진행
 
